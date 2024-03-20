@@ -1,0 +1,104 @@
+body{
+    height: 98vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4f5ff;
+}
+
+.calculator{
+    background-color: #e4f5ff;
+    border: solid;
+    padding: 10px;
+    border-color: #034b9d;
+}
+
+.buttons{
+    background-color: #eeeff4;
+    padding: 10px;
+    display: flex;
+}
+
+button{
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ebf1ef;
+    color: #095497;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
+
+.grey{
+    background-color: #808082;
+    color: white;
+}
+
+.greyNew{
+    background-color: #b1b1af;
+    color: white;
+}
+
+.boss{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.numbersButtons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+.screen{
+    border-radius: 5px 5px 5px 5px;
+    border: 5px solid;
+    border-color: #a9aaac;
+    background-color: #ffffff;
+    text-align: right;
+    padding: 20px;
+}
+
+.twoButtons{
+    display: flex;
+    gap: 10px;
+}
+
+.global{
+    display: flex;
+    gap: 10px;
+}
+
+.calcButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secondRow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.horizontalButton{
+    width: 100%;
+}
+
+.verticalButton{
+    background-color: #025db8;
+    color: white;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
