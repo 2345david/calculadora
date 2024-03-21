@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js"></script>
 </head>
 <body>
    <div class="calculator">
     <p>David Ramos García</p>
         <div class="screen">
-            <div class="result">
-                0
+            <div class="result" id="screen">
+               0 
             </div>
         </div>
         
             <div class="buttons">
                 <div class="boss">
                     <div class="numbersButtons">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
+                        <button onclick="darNumero(7)">7</button>
+                        <button onclick="darNumero(8)">8</button>
+                        <button onclick="darNumero(9)">9</button>
+                        <button onclick="darNumero(4)">4</button>
+                        <button onclick="darNumero(5)">5</button>
+                        <button onclick="darNumero(6)">6</button>
+                        <button onclick="darNumero(1)">1</button>
+                        <button onclick="darNumero(2)">2</button>
+                        <button onclick="darNumero(3)">3</button>
                     </div>
                     <div class="twoButtons">
-                        <button class="horizontalButton">0</button>
-                        <button class="otherButton">.</button>
+                        <button class="horizontalButton" onclick="darNumero(0)">0</button>
+                        <button class="otherButton" onclick="darNumero('.')">.</button>
                     </div>
                 </div>
                 <div class="global">
                     <div class="calcButtons">
-                        <button type="reset" class="delete">C</button>
-                        <button class="grey">X</button>
-                        <button class="grey">-</button>
-                        <button class="grey">+</button>
+                        <button type="reset" class="delete" onclick="mDelete()">C</button>
+                        <button class="grey" onclick="darNumero('*')">X</button>
+                        <button class="grey" onclick="darNumero('-')">-</button>
+                        <button class="grey" onclick="darNumero('+')">+</button>
                     </div>
                     <div class="secondRow">
                         <button class="greyNew">⇨</button>
-                        <button class="grey">÷</button>
-                        <button type="submit" class="verticalButton">=</button>
+                        <button class="grey" onclick="darNumero('/')">÷</button>
+                        <button class="verticalButton" onclick="equal('=')">=</button>
                     </div>
                 </div>
             </div> 
