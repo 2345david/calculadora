@@ -1,4 +1,9 @@
 body{
+    background-image: url(programacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
     height: 98vh;
     width: 98vw;
     display: flex;
@@ -10,27 +15,37 @@ body{
 .calculator{
     background-color: #e4f5ff;
     border: solid;
-    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 25px 25px 25px;
     border-color: #034b9d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .buttons{
     background-color: #eeeff4;
-    padding: 10px;
     display: flex;
 }
 
 button{
-    font-size: 25px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:wheat;
+    font-size:20px;
     font-weight: bold;
     border: 1px solid;
+    border-color: grey;
     border-radius: 5px 5px 5px 5px;
-    background-color: #ebf1ef;
     color: #095497;
     width: 50px;
     height: 50px;
     min-width: 50px;
     min-height: 50px;
+}
+
+button:hover{
+    background-color: black;
 }
 
 .delete{
@@ -61,13 +76,37 @@ button{
     gap:10px;
 }
 
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2f8095;
+    padding: 5px;
+    margin: 0px;
+    text-align: right;
+}
+
+.line{
+    display: flex;
+    padding: 2.5px;
+}
+
 .screen{
+    font-size: 30px;
     border-radius: 5px 5px 5px 5px;
     border: 5px solid;
     border-color: #a9aaac;
     background-color: #ffffff;
-    text-align: right;
     padding: 20px;
+    width: 240px; 
+}
+
+.result{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid #a9a9a9;
 }
 
 .twoButtons{
